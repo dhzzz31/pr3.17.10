@@ -36,8 +36,9 @@ namespace pr3._17._10
         }
 
         private void backgroundButton_Click(object sender, EventArgs e)
-        {         
-          
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+                pictureBox1.BackColor = colorDialog1.Color;
 
         }
 

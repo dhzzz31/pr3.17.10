@@ -21,7 +21,7 @@ namespace pr3._17._10
 
         private void showButton_Click(object sender, EventArgs e)
         {
-            // Показываем диалог открытия. Если нажать "ОК" то выведет изображение
+           // Показываем диалог открытия.Если нажать "ОК" то выведет изображение
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);

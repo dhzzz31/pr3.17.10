@@ -45,7 +45,7 @@ namespace pr3._17._10
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            // Расширяем изображение во все окно
+            ilfkuthi //fsdijfolox
             if (checkBox1.Checked)
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             else

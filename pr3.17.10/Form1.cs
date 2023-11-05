@@ -14,14 +14,14 @@ namespace pr3._17._10
 
         private void closeButton_Click(object sender, EventArgs e)
         {
+            // Закрыть форму
             this.Close();
 
         }
 
         private void showButton_Click(object sender, EventArgs e)
         {
-            //Show the open File dialog. If the users clicks ok, loat the
-            // picture that the user chose.
+            // Показываем диалог открытия. Если нажать "ОК" то выведет изображение
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);
@@ -30,13 +30,14 @@ namespace pr3._17._10
 
         private void clearButton_Click(object sender, EventArgs e)
         {
-            //cleare the picture
+            // Отчистить форму
             pictureBox1.Image = null;
 
         }
 
         private void backgroundButton_Click(object sender, EventArgs e)
         {
+            // Показываем диалог открытия выбора цвета. Если нажать "ОК" то сменится фон
             if (colorDialog1.ShowDialog() == DialogResult.OK)
                 pictureBox1.BackColor = colorDialog1.Color;
 
@@ -44,6 +45,7 @@ namespace pr3._17._10
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
+            // Расширяем изображение во все окно
             if (checkBox1.Checked)
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             else
